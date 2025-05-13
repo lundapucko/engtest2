@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+	max-width:800px;
+	margin:40px auto;
+}
+
+ .bg {
+	max-width:550px;
+	height:800px;
+	background: url('https://svenskakyrkansunga.se/wp-content/themes/wasabiweb/custom/assets/dist/img/site-logo-light.svg') repeat;
+	background-size:100%;
+	box-shadow:1000px 1000px #fffe inset;
+	margin:20px auto;
+	padding: 60px 40px;
+	font-family:Open Sans;
+	font-size:18px;
+}
+
+ .title{
+	text-align:center;
+	font-family:Open Sans;
+	font-weight:bold;
+	font-size:45px;
+}
+
+section{
+	display:none;
+	text-align:center;
+	padding:20px;
+}
+
+hr {
+	 display: block;
+  margin-top: 0.5em auto;
+  border-style: inset;
+  border-width: 1px;
+	border-color:black
+}
+hr.img{
+	border:none;
+	width:300px;
+	height:25px;
+	margin:20px auto;
+background:url('https://svgsilh.com/svg_v2/31609.svg') center no-repeat;
+	background-size:100%;
+}
+
+button{
+	margin:5px;
+	padding:10px 20px;
+	color:white;
+	font-size:25px;
+	font-family:Open Sans;
+	background:#D0043C;
+	border:groove 2px #D0043C;
+	border-radius: 10px;
+}
+
+button:active{
+	border:groove 2px lightgray;
+}
+
+p{
+	color:black;
+	font-size:16px;
+	font-style:normal;
+	margin: 0px 0px 20px 0px;
+}
+
+p.q{
+	color:black;
+	font-size:20px;
+	font-style:normal;
+	margin: 0px 0px 20px 0px;
+}
+
+img{
+	width:180px;
+	height:auto;
+}
+
+div.foot{
+	  position: absolute;
+   bottom: -680px;
+}
