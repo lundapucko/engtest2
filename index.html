@@ -1,56 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-<!-- 
-This test was written and developed by Svenska Kyrkans Unga. Code by @lundapucko. 
-Feel free to translate and use, but do not remove credits. 
--->
-
-	<meta charset="UTF-8">
- 
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-  	<script src="script.js" defer></script>
-	<title>Engagemangstestet</title>
-
-
-
-	
-</head>
+	<head>
+		<!--- information. This test was developed by Svenska Kyrkans Unga. -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js" defer></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<title>Engagemangstestet</title>
+	</head>
 
 <body>
-<div class="title">
-
-	Engagemangstestet
-	
+<header>
+	<div class="title">
+	VILKEN ENGAGEMANGSTYP ÄR DU?
 </div>
-
-
-<hr class="img">
+	</header>
 
 <div class="bg">
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		
+	<p>Välkomnen till Svenska Kyrkans Ungas engagemangstest. Det här testet är till för dig som är ung och vill upptäcka vilken typ av engagemang du bär på.</p>
 	
-	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+	<p>Testet består av ja- och nej-frågor. När du svarat på alla frågor kommer du få veta vilken engagemangstyp du är - och vad du borde göra för att upptäcka ditt engagemang! </p>
 	
-	<p class="q">Gör testet nu!</p>
+	<center><p class="large">Gör testet nu!</p></center>
 				
 	<hr>
 		
 	<!-- Test begins here -->
 	<section style="display:block;" id="0">
 		
-	<button onclick="showPage(1)">Påbörja testet</button>
+		<button onclick="showPage(1)">
+			Påbörja testet
+		</button>
 	
 	</section>
 	
-	<!-- Page 1 --> <!-- -->
+	<!-- Page 1 --><!-- -->
 	<section id="1">
 			
-	<p class="q"> Brinner du för något</p> 
+	<p class="query">
+		Finns det något du vill förändra?
+	</p>
+	<div class="expl">
+	<p> Kan du direkt här och nu säga något specifikt du vill förändra? Det kan vara någotnting stort eller litet. Tänk på att det måste vara någonting som är på ett visst sätt idag, men som du skulle vilja var på ett annat sätt. </p>
+		</div>
 	
 	<button onclick="showPage(2)"> Ja </button> 
 	<button onclick="showPage(3)"> Nej </button>
@@ -59,35 +54,51 @@ Feel free to translate and use, but do not remove credits.
 	
 	<!-- Page 2 --> <!-- -->
 	<section id="2">
-			
-	<p class="q"> Brinner du för en konkret förändring? </p>
-			
-	<button onclick="showPage(4)"> Ja </button> 
-	<button onclick="showPage(5)"> Nej </button>
-			
+		<div class="result">	
+	<p class="duar"> 
+		Du är...
+	</p>
+		<p class="typ">Facklan</p>
+		
+		<p>Som facklan vet du redan vad du brinner för och vad du vill förändra - nu behöver du bara verktyg att förändra det. Prova på Change maker-metoden!</p> 
+		
+		<img src="https://cdn.pixabay.com/photo/2017/05/07/20/54/fire-2293607_1280.jpg">
+		</div>
 	</section>
 	
 	<!-- Page 3 --> <!-- -->
 	<section id="3">
 			
-	<p class="q"> Har du varit på ett demokratiskt möte någon gång? </p>
-			
-	<button onclick="showPage(6)"> Ja </button> 
-	<button onclick="showPage(7)"> Nej </button>
+	<p class="query"> Brinner du för något? </p>
+		<div class="expl">
+		<p>Finns det någon fråga, idé eller sak som du känner extra starkt för? Kan du sätta ord på vad det är du brinner för? </p> 
+		</div>
+	<button onclick="showPage(4)"> Ja </button> 
+	<button onclick="showPage(5)"> Nej </button>
 			
 	</section>
 	
 	<!-- Page 4 --> <!-- -->
 	<section id="4">
 			
-	<p class="q"> Du är en aktivist! <br>Gör Change-maker-metoden </p>
-	<img src="https://cdn.pixabay.com/photo/2023/04/06/10/22/earth-day-7903523_1280.png" />
+	<p class="query"> Brinner du för en organisation? </p>
+		<div class="expl">
+		<p>Bultar ditt hjärta lite extra för något sammanhang eller någon gemenskap som du är med i? Till exempel: jag brinner för Svenska Kyrkans Unga. </p>
+		</div>
+			
+	<button onclick="showPage(6)"> Ja </button> 
+	<button onclick="showPage(7)"> Nej </button>
+			
 	</section>
+		
 	
 	<!-- Page 5 --> <!-- -->
 	<section id="5">
 			
-	<p class="q"> Finns det något som gör dig frustrerad? </p>
+	<p class="query"> Finns det något som gör dig arg? </p>
+		<div class="expl">
+		<p>Kan du känna att dig frustrerad över saker i livet, världen samhället?   </p> 
+		</div>
 			
 	<button onclick="showPage(8)"> Ja </button> 
 	<button onclick="showPage(9)"> Nej </button>
@@ -97,72 +108,119 @@ Feel free to translate and use, but do not remove credits.
 	<!-- Page 6 --> <!-- -->
 	<section id="6">
 			
-	<p class="q"> Tyckte du det var roligt? </p>
-			
-	<button onclick="showPage(10)"> Ja </button> 
-	<button onclick="showPage(5)"> Nej </button>
+	<p class="duar"> 
+		Du är...
+	</p>
+		<p class="typ">Partyfixaren</p>
+		
+		<p>Du älskar att sätta saker i system. Att organisera, fixa och planera är din grej. Du är en person som passar perfekt för att sitta i en styrelse!</p> 
+		
+		<img src="https://cdn.pixabay.com/photo/2014/09/18/18/19/playmobil-451203_1280.jpg">
 			
 	</section>
 	
 	<!-- Page 7 --> <!-- -->
 	<section id="7">
 			
-	<p class="q"> Du är kanske en upptäckare! Prova att åka på ett demokratiskt möte och kolla om du tycker att det är roligt!</p>
+<p class="duar"> 
+		Du är...
+	</p>
+		<p class="typ">Eldsjälen</p>
 		
-	<img src="http://clipart-library.com/image_gallery/393440.png" height="100">
+		<p>Ditt hjärta brinner - du vill att världen ska bli hel, men du kanske tycker det är lite svårt att säga exakt vilka frågor du brinner för. Det är helt okej - ditt engagemang behövs! Prova på se - bedöm - handla.</p> 
+		
+		<img src="https://cdn.pixabay.com/photo/2015/12/02/10/24/fire-1073217_1280.jpg">
 			
 </section>
 	
 	<!-- Page 8 --> <!-- -->
 	<section id="8">
 			
-	<p class="q"> Du brinner för något ju! Du är nog en aktivist. Skriv om det du som gör dig frustrerad till en konkret förändring och gör Change-maker-metoden.</p>
-		<img src="https://cdn.pixabay.com/photo/2023/04/06/10/22/earth-day-7903523_1280.png" alt="Change maker "height="100" />
+	<p class="query"> Finns det en konkret sak i samhället/världen/kyrkan/livet som gör dig arg? </p>
+		<div class="expl">
+		<p> Kan du sätta ord på exakt vad det är som gör dig arg - och vad det är du vill förändra?</p>
+		</div>
+		
+			<button onclick="showPage(10)"> Ja </button> 
+	<button onclick="showPage(11)"> Nej </button>
+	
 	</section>
 	
 	<!-- Page 9 --> <!-- -->
 	<section id="9">
 			
-	<p class="q"> Finns det något som gör dig glad?</p>
-	<button onclick="showPage(11)"> Ja </button> 
-	<button onclick="showPage(12)"> Nej </button>
+	<p class="query"> Finns det något som gör dig glad?</p>
+		<div class="expl">
+		<p> Kan du sätta ord på någoting som du blir glad av. Kanske någon sak, plats eller person? Kanske ett något som får dig att känna hopp för världen?</p>
+		</div>
+	<button onclick="showPage(12)"> Ja </button> 
+	<button onclick="showPage(13)"> Nej </button>
 			
 	</section>
 	
 	<!-- Page 10 --> <!-- -->
 	<section id="10">
 			
-	<p class="q"> Du är ju en Paragrafryttare. Du kommer passa bäst att sitta i en styrelse! Kolla upp om det finns någon organisation som du tycker om som du kan engagera dig i styrelsen för.</p>
+	<p class="duar"> 
+		Du är...
+	</p>
+		<p class="typ">Rebellen</p>
 		
-	<img src="https://png.pngtree.com/png-clipart/20230914/original/pngtree-board-meeting-clipart-people-meeting-in-a-business-meeting-cartoon-vector-png-image_11242380.png" height="100" alt="Board member"/>
+		<p>Din största tillgång är din ilska och frustration - den driver ditt engagemang. Låt din känslor blir din kraft till att förändra! Vad du behöver, är att hitta ett sätt att låta din frustration bli till handling! Prova på Se - bedöm - handla. </p> 
+		
+		<img src="https://cdn.pixabay.com/photo/2020/05/12/20/01/spaceship-5164783_1280.jpg">
 			
 	</section>
 
 	<!-- Page 11 --> <!-- -->
 	<section id="11">
 			
-	<p class="q"> Du är nog egentligen lite av en upptäckar-aktivist. Fundera på vad du kan göra för att förstärka det som är bra. En bra metod är NÖHRA!</p>
+<p class="duar"> 
+		Du är...
+	</p>
+		<p class="typ">Popocornet</p>
 		
-		<img src="https://lwfiles.mycourse.app/65ce2ee220579fde638e161f-public/45b80ac04c5df2a4da05de9f0571fda7.png" alt="NOHRA" height="100"/>
+		<p>Ditt engagemang är gömt i ett skal - det väntar på att få poppa upp och ta plats. Du behöver hitta vilka frågor som du brinner för - så att du kan vara med och förändra dem!  </p> 
+		
+		<img src="https://cdn.pixabay.com/photo/2015/12/09/17/12/new-years-eve-1085072_1280.jpg">
 			
 	</section>
 	
 	<!-- Page 12 --> <!-- -->
 	<section id="12">
 			
-	<p class="q"> Det är helt okej att känna så, Gud älskar dig ändå. Just nu kanske inte är rätt tid för dig att engagera dig, men du kanske skulle prova på lite själavård?</p>
-	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/1200px-Heart_coraz%C3%B3n.svg.png" alt="Heart" height="100" />
-
+<p class="duar"> 
+		Du är...
+	</p>
+		<p class="typ">Solstrålen</p>
+		
+		<p>Din energi kommer från det som gör dig glad. Ditt engagemang bygger på att förstärka allt det som är bra i världen, att se till att fler får känna sig glada. Prova på att göra <i>I min drömförsamling...</i></p> 
+		
+		<img src="https://cdn.pixabay.com/photo/2018/02/04/19/18/sunlight-3130638_1280.jpg">
+			
+	</section>
+	
+		<!-- Page 13 --> <!-- -->
+	<section id="13">
+		
+<p class="duar"> 
+		Du är...
+	</p>
+		<p class="typ">Spöket</p>
+		
+		<p>Du vet inte riktigt var ditt engagemang och driv kommer ifrån, du känner det inte tydligt. Tids nog kommer du att hitta det, men kanske inte just nu... Hitta platser där du känner dig glad, lyssna till vad andra brinner för. Du är viktig här och nu. </p> 
+		
+		<img src="https://cdn.pixabay.com/photo/2015/10/22/17/32/smoke-1001664_1280.png">
 			
 	</section>
 		
-	<div class="foot">
-		<span onclick="redo()" style="cursor:pointer;"> &#8617; Gör om testet </span>
-	</div>	
+<hr>
+<span onclick="redo()" style="cursor:pointer;"> &#8617; Gör om testet </span>
+<div>
+		<p class="cred">	&#169; <a href="https://svenskakyrkansunga.se/" style="color:gray;text-decoration:none;" target="_parent">Svenska Kyrkans Unga 2025</a></p>	
+	</div>
 </div>
 
-<hr>
-<p style="color:gray;font-size:10px;font-family:courier;text-align:center;font-weight:normal;">	&#169; <a href="https://svenskakyrkansunga.se/" style="color:gray;text-decoration:none;" target="_parent">Svenska Kyrkans Unga 2025</a></p>
-
 </body>
+
 </html>
