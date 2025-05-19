@@ -1,26 +1,35 @@
 
 body {
-	max-width:800px;
+	max-width:calc(350px + 12em);
 	margin:40px auto;
+	box-shadow:3px 3px 7px gray;
+}
+
+header {
+ background:#D0043C;
+	padding: 20px;
+	color: #fff;
+	text-shadow: 2px 2px 5px #222;
 }
 
  .bg {
-	max-width:550px;
-	height:800px;
-	background: url('https://svenskakyrkansunga.se/wp-content/themes/wasabiweb/custom/assets/dist/img/site-logo-light.svg') repeat;
+	color:white;
+	background:#CAD400;
 	background-size:100%;
-	box-shadow:1000px 1000px #fffe inset;
-	margin:20px auto;
-	padding: 60px 40px;
-	font-family:Open Sans;
-	font-size:18px;
+	margin:auto auto;
+	padding: 20px 40px;
+	color:#000;
+	font-family:PT Sans;
+	font-size:20px;
+	
 }
 
  .title{
 	text-align:center;
-	font-family:Open Sans;
+	font-family:"PT Sans";
 	font-weight:bold;
-	font-size:45px;
+	font-size: 40px;
+	letter-spacing: 1px;
 }
 
 section{
@@ -30,27 +39,27 @@ section{
 }
 
 hr {
-	 display: block;
-  margin-top: 0.5em auto;
-  border-style: inset;
-  border-width: 1px;
-	border-color:black
+	display: block;
+ margin-top: 0.5em auto;
+ border-style: inset;
+ border-width: 1px;
+	border-color:#fff;
 }
 hr.img{
 	border:none;
 	width:300px;
 	height:25px;
 	margin:20px auto;
-background:url('https://svgsilh.com/svg_v2/31609.svg') center no-repeat;
 	background-size:100%;
 }
 
 button{
 	margin:5px;
 	padding:10px 20px;
-	color:white;
+	color:#fff;
 	font-size:25px;
-	font-family:Open Sans;
+	font-family:inherit;
+	font-weight:bold;
 	background:#D0043C;
 	border:groove 2px #D0043C;
 	border-radius: 10px;
@@ -61,25 +70,65 @@ button:active{
 }
 
 p{
-	color:black;
-	font-size:16px;
+	color:#000;
+	font-size:18px;
 	font-style:normal;
 	margin: 0px 0px 20px 0px;
 }
 
-p.q{
-	color:black;
+p.large{
+	color:#000;
 	font-size:20px;
 	font-style:normal;
-	margin: 0px 0px 20px 0px;
+}
+
+p.query{
+	margin: 10px;
+	padding:10px 0px;
+	color:#fff;
+	font-size:25px;
+	font-weight:bold;
+	background-color:#D5007F;
+	rotate:-3deg;
+}
+
+p.duar{
+	font-size:30px;
+}
+
+p.typ{
+	font-size:50px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-shadow: 2px 2px 5px #fff;
+}
+
+div.expl{
+	margin:30px 0px;
+}
+
+div.result{
+	background-image: url("https://img1.picmix.com/output/stamp/normal/6/4/3/4/2454346_b817a.gif");
+}
+
+p.cred{
+	color:gray;
+	font-size:10px;
+	font-family:courier;
+	text-align:center;
+	font-weight:normal;
+	margin:10px;
+}
+
+hr{
+	border: solid black 1px;
+}
+
+section{
+	min-height:400px;
 }
 
 img{
 	width:180px;
 	height:auto;
-}
-
-div.foot{
-	  position: absolute;
-   bottom: -680px;
 }
