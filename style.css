@@ -1,7 +1,12 @@
+html, body {
+	margin: 0;
+ padding: 0;
+ width: 100%;
+}
+
 body {
-	max-width:calc(350px + 12em);
-	margin:40px auto;
-	box-shadow:3px 3px 7px gray;
+    max-width: unset !important; /* ta bort begränsningen */
+    box-shadow: none !important; /* undvik att iframen klipper skuggan */
 }
 
 header {
@@ -131,4 +136,5 @@ img{
 	width:180px;
 	height:auto;
 }
+
 
