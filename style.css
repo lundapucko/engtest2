@@ -9,7 +9,7 @@ body {
     max-width: unset !important;
     box-shadow: none !important;
     font-family: "PT Sans", sans-serif;
-    background: #f2f1ee;
+    background: #fff;
     color: #1a1a1a;
 }
 
@@ -188,6 +188,7 @@ p.cred, .copyright {
     text-align: center;
     margin: 10px 0 0 0;
 }
+
 
 
 
