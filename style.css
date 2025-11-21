@@ -1,7 +1,7 @@
 html, body {
     margin: auto;
     padding: 0;
-    width: 98%;
+    width: 99%;
 }
 
 /* Base Layout */
@@ -52,7 +52,7 @@ section {
     display: none;
     text-align: center;
     padding: 24px 18px;
-    min-height:700px;
+    min-height:400px;
     background: #ffffff;
     border-radius: 12px;
     border: 1px solid #ddd8d5;
@@ -212,3 +212,4 @@ p.cred, .copyright {
 .btn-row button {
     margin: 0 8px;
 }
+
