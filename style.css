@@ -1,7 +1,7 @@
 html, body {
-    margin: 0;
+    margin: auto;
     padding: 0;
-    width: 100%;
+    width: 98%;
 }
 
 /* Base Layout */
@@ -15,10 +15,14 @@ body {
 
 /* Header */
 header {
+	max-width: 900px;
     background: #D0043C;
     padding: 16px 12px;
     color: #fff;
+	box-sizing: border-box;
     border-bottom: 3px solid #8b0224;
+	border-radius: 16px 16px 0px 0px ;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
 }
 
 .title {
@@ -37,8 +41,8 @@ header {
     padding: 20px 16px 40px 16px;
     box-sizing: border-box;
     max-width: 900px;
-    margin: 16px auto 32px auto;
-    border-radius: 16px;
+    margin: 0px auto 32px auto;
+    border-radius: 0px 0px 16px 16px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.10);
     font-size: 18px;
 }
@@ -48,7 +52,7 @@ section {
     display: none;
     text-align: center;
     padding: 24px 18px;
-    min-height: 260px;
+    min-height:700px;
     background: #ffffff;
     border-radius: 12px;
     border: 1px solid #ddd8d5;
@@ -64,6 +68,7 @@ section ul.sub {
     text-align: left;
 }
 
+
 /* Buttons */
 button {
     margin: 8px;
@@ -71,6 +76,7 @@ button {
     border-radius: 999px;
     border: none;
     background: #5B358C;
+	font-family: "PT Sans", sans-serif;
     color: #ffffff;
     font-size: clamp(18px, 4vw, 22px);
     font-weight: bold;
@@ -169,6 +175,7 @@ p.typ {
 	transform: rotate(-1deg);
 }
 
+
 /* Divider */
 hr {
     border: solid #d7d2cf 1px;
@@ -189,6 +196,19 @@ p.cred, .copyright {
     margin: 10px 0 0 0;
 }
 
+.card-inner {
+    min-height: 700px;              /* samma höjd som section */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* sprid ut: topp – mitten – botten */
+}
 
+/* se till att knapparna håller sig längst ned i kortet */
+.btn-row {
+    margin-top: 16px;
+}
 
-
+/* knapparna i rad, men fortfarande centrade */
+.btn-row button {
+    margin: 0 8px;
+}
