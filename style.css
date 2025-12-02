@@ -9,7 +9,7 @@ body {
     max-width: unset !important;
     box-shadow: none !important;
     font-family: "PT Sans", sans-serif;
-    background: #fff;
+    background: transparent;
     color: #1a1a1a;
 }
 
@@ -213,5 +213,6 @@ p.cred, .copyright {
 .btn-row button {
     margin: 0 8px;
 }
+
 
 
