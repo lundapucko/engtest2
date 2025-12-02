@@ -16,6 +16,7 @@ body {
 /* Header */
 header {
 	max-width: 900px;
+	margin: 0px auto 32px auto;
     background: #D0043C;
     padding: 16px 12px;
     color: #fff;
@@ -212,4 +213,5 @@ p.cred, .copyright {
 .btn-row button {
     margin: 0 8px;
 }
+
 
